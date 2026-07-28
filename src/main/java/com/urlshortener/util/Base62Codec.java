@@ -3,7 +3,8 @@ package com.urlshortener.util;
 
 public final class Base62Codec {
 
-  private static final String ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  private static final String ALPHABET =
+      "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   private static final int BASE = ALPHABET.length();
 
   private Base62Codec() {}

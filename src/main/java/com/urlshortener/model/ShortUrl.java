@@ -28,13 +28,13 @@ public class ShortUrl {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Column(nullable = false)
+  @Column(nullable = false, length = 16)
   private String code;
 
   @Column(name = "long_url", nullable = false)
   private String longUrl;
 
-  @Column(name = "url_hash", nullable = false)
+  @Column(name = "url_hash", nullable = false, length = 64)
   private String urlHash;
 
   @Column(name = "is_custom", nullable = false)

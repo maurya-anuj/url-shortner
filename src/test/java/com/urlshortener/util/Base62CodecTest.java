@@ -40,22 +40,19 @@ class Base62CodecTest {
   @Test
   @DisplayName("encode throws IllegalArgumentException for negative input")
   void encodeNegativeThrows() {
-    assertThatThrownBy(() -> Base62Codec.encode(-1L))
-        .isInstanceOf(IllegalArgumentException.class);
+    assertThatThrownBy(() -> Base62Codec.encode(-1L)).isInstanceOf(IllegalArgumentException.class);
   }
 
   @Test
   @DisplayName("decode throws IllegalArgumentException for null input")
   void decodeNullThrows() {
-    assertThatThrownBy(() -> Base62Codec.decode(null))
-        .isInstanceOf(IllegalArgumentException.class);
+    assertThatThrownBy(() -> Base62Codec.decode(null)).isInstanceOf(IllegalArgumentException.class);
   }
 
   @Test
   @DisplayName("decode throws IllegalArgumentException for empty string")
   void decodeEmptyThrows() {
-    assertThatThrownBy(() -> Base62Codec.decode(""))
-        .isInstanceOf(IllegalArgumentException.class);
+    assertThatThrownBy(() -> Base62Codec.decode("")).isInstanceOf(IllegalArgumentException.class);
   }
 
   @Test

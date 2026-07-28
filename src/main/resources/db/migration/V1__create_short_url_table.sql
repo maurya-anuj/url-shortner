@@ -3,7 +3,7 @@ CREATE TABLE short_url (
     id          BIGSERIAL PRIMARY KEY,
     code        VARCHAR(16) NOT NULL,
     long_url    TEXT NOT NULL,
-    url_hash    CHAR(64) NOT NULL,
+    url_hash    VARCHAR(64) NOT NULL,
     is_custom   BOOLEAN NOT NULL DEFAULT FALSE,
     created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
 );
