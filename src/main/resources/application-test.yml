@@ -1,0 +1,2 @@
+# Test profile configuration
+# Testcontainers will override the datasource properties at runtime

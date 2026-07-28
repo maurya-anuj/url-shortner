@@ -1,0 +1,14 @@
+# Default Spring Boot configuration for the url-shortener service
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/urlshortener
+    username: app
+    password: app
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
